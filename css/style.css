@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(255deg, rgba(60, 0, 255, 1) 0%, rgba(119, 0, 153, 1) 100%) no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* SCROLL BAR CSS */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1ch rgb(0, 0, 0);
+    background-color: #3c00ff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    /* background-color: #131416; */
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #770099;
+    -webkit-box-shadow: inset 0 0 1ch rgba(255, 255, 255, 0.301);
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    /* background-color: #ffffff; */
+    background-color: #ff00ea;
+}
+
+/* SCROOL BAR CSS DONE */
+
+/* BOOTSTRAP CSS */
+
+.btn-info {
+    background-color: #3c00ff;
+    border: 1px solid #3c00ff;
+    color: white;
+    transition: 0.9s ease-in-out;
+}
+
+.btn-info:hover {
+    background-color: #770099;
+    border: 1px solid white;
+    color: white;
+}
+
+/* BOOTSTRAP CSS */
+
+/* NAVBAR CSS */
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+    /* border-spacing: 15px 50px; */
+}
+
+.nav-link:focus {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+}
+
+.navact {
+    color: #ff0000;
+    border-bottom: 2px solid #ff0000;
+}
+
+.navbar-brand {
+    transition: 0.5s ease-in-out;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.10);
+}
+
+.fixed-top {
+    top: -40px;
+    transform: translateY(40px);
+    transition: transform .5s;
+}
+
+.navbar-toggler:active {
+    box-shadow: 2px 2px 2ch white;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+    border: 1px solid white;
+}
+
+.asd {
+    margin-top: 3px;
+}
+
+/* navbar css */
+/* HERO CSS */
+
+.heroimg {
+    border-radius: 60px;
+    transition: 0.5s ease-in-out;
+}
+
+.heroimg:hover {
+    transform: scale(1.05) rotate(-5deg);
+}
+
+/* HERO CSS */
+/* Count Sec Css */
+
+.count-main {
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 10px;
+    cursor: default;
+}
+
+.count-text {
+    transition: 0.5s ease-in-out;
+}
+
+.count-text:hover {
+    transform: scale(1.5);
+    font-style: oblique;
+}
+
+/* Count Sec Css */
+
+/* Trending sec css */
+
+.tre-bg {
+    background: linear-gradient(45deg, rgba(60, 0, 255, 1) 0%, rgba(119, 0, 153, 1)) no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: 2px solid white;
+    transition: 0.5s ease-in-out;
+}
+
+.tre-bg:hover {
+    box-shadow: inset 0px 0px 5ch black;
+}
+
+.tre-img {
+    transition: 0.5s ease-in-out;
+}
+
+.tre-img:hover {
+    transform: scale(1.5);
+    transform: perspective(100%) translateY(15%) rotateX(25deg) translateZ(0);
+    clip-path: inset(0px 0px 40px 0px);
+}
+
+.tre-a {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.tre-a:hover {
+    color: #ff0000;
+}
+
+/* Trending sec css */
+
+/* Be Detailed Sec css */
+
+.be-bg {
+    background-color: rgba(255, 255, 255, 0.219);
+    border-radius: 10px;
+}
+
+.be-text {
+    background: linear-gradient(45deg, rgba(60, 0, 255, 1) 0%, rgba(119, 0, 153, 1)) no-repeat;
+    box-shadow: 0px 0px 4ch rgb(111, 0, 255), 2px 2px 10px black;
+    border-radius: 10px;
+    cursor: default;
+}
+
+.be-img {
+    transition: 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.be-img:hover {
+    transform: scale(1.05);
+}
+
+/* Be Detailed Sec css */
+/* Discover sec css */
+
+.ds-img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2ch black;
+}
+
+
+
+/* Discover sec css */
+/* Footer sec css */
+
+footer {
+    /* background-color: rgba(255, 255, 255, 0.219); */
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    border-bottom: 1px solid white;
+    opacity: 100;
+}
+
+ul {
+    list-style: none;
+
+}
+
+footer a {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+footer a:hover {
+    color: #ff00ea;
+}
+
+footer h3,
+h4 {
+    color: #ff00ea;
+    cursor: default;
+}
+
+/* Footer sec css */
+
+/* MARKET PLACE CSS */
+
+.mr-card a {
+    text-decoration: none;
+}
+
+.mr-card .card-body,
+.card {
+    background-color: transparent;
+    color: white;
+}
+
+.card-body .btn-outline-light {
+    transition: 0.6s ease-in-out;
+}
+
+.card-body .btn-outline-light:hover {
+    background-color: #ff00ea;
+    color: black;
+    border-color: black;
+    box-shadow: 0px 0px 2ch #ff00ea;
+}
+
+.mr-card .card {
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.mr-card .card:hover {
+    background-color: #3c00ff;
+}
+
+.mr-card .card-img-top {
+    transition: 0.5s ease-in-out;
+}
+
+.mr-card .card-img-top:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 2px 2ch black;
+}
+
+.mr-card .card-title {
+    transition: 0.5s ease-in-out;
+}
+
+.mr-card .card-title:hover {
+    color: #ff0000;
+}
+
+.mr-card .card-text {
+    color: #ff0000;
+    transition: 0.5s ease-in-out;
+}
+
+.mr-card .card-text:hover {
+    color: #ff00ea;
+    font-size: larger;
+}
+
+/* MARKET PLACE CSS */
+
+/* SING IN CSS */
+
+form a {
+    text-decoration: none;
+    color: #ff00ea;
+    transition: 0.5s ease-in-out;
+}
+
+form a:hover {
+    color: #ff0000;
+}
+
+form .form-control {
+    background: linear-gradient(90deg, rgba(60, 0, 255, 1) 0%, rgba(119, 0, 153, 1)) no-repeat;
+    color: white;
+}
+
+form .form-control:focus {
+    background-color: #ff00ea;
+    color: white;
+    box-shadow: 2px 2px 2ch #ff00ea;
+}
+
+form .form-control::placeholder {
+    color: rgb(214, 214, 214);
+}
+
+/* SING IN CSS */
+
+/* Contact Page CSs */
+
+.cu-box-2 {
+    background-color: #3c00ff;
+    box-shadow: inset 0px 0px 4ch #000000;
+}
+
+.cu-links {
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+
+.cu-links:hover {
+    color: #ff00ea;
+    cursor: pointer;
+}
+
+/* Contact Page CSs */
+
+
+/* ADD TO CART CSS */
+
+.iconShopping {
+    position: fixed;
+    right: 0rem;
+    top: 5rem;
+    background-color: #ff00ea;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding-right: 1rem;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 1ch rgba(0, 0, 0, 0.753);
+}
+
+.iconShopping:hover {
+    background-color: #ff0000;
+}
+
+.adbtn {
+    color: #3c00ff;
+    outline: none;
+    border: none;
+}
+
+.adbtn:focus {
+    background-color: transparent;
+    color: #f00;
+    outline: none;
+    border: none;
+}
+
+/*cart box*/
+.cartBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    transition: 0.3s linear;
+    transform: scale(0);
+    overflow-y: auto;
+}
+
+.cartBox.active {
+    transform: scale(1);
+}
+
+.cartBox .cart {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    background: linear-gradient(90deg, rgba(60, 0, 255, 1) 0%, rgba(119, 0, 153, 1)) no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartBox .cart i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ff0000;
+    padding: 10px 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cartBox .cart i:hover {
+    background: #ff00ea;
+}
+
+.cartBox .cart h1 {
+    position: relative;
+    margin-top: 2%;
+    font-size: 2.8rem;
+    color: white;
+}
+
+/* ADD TO CART CSS */
+
+/* progressbar and back to top button css start */
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.5s;
+}
+
+.back-to-top-icon {
+    color: #ff00ea;
+    font-size: 40px;
+    transition: 0.5s ease-in-out;
+}
+
+.back-to-top-icon:hover {
+    opacity: 90%;
+    color: #ff0000;
+}
+
+
+.hidden {
+    opacity: 0%;
+}
+
+.progress-bar {
+    height: 3px;
+    background: #ff00ea;
+    position: fixed;
+    /* top: 66px; */
+    bottom: 0;
+    left: 0;
+}
+
+/* progressbar and back to top button css done */
+
+/* WHATSAPP CSS */
+
+.whatsapp {
+    position: fixed;
+    left: 0rem;
+    bottom: 2.5rem;
+    background-color: #ff00ea;
+    color: #3c00ff;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+    padding-right: 1rem;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2px 2px 1ch rgba(0, 0, 0, 0.753);
+}
+
+.whatsapp:hover {
+    background-color: #ff0000;
+}
+
+.whatsapp a {
+    text-decoration: none;
+}
+
+/* WHATSAPP CSS */
