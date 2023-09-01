@@ -11,7 +11,7 @@ body {
     background-size: cover;
     color: white;
     font-family: 'Poppins', sans-serif;
-    cursor: url('../images/mouse.png'),auto;
+    cursor: url('images/mouse.png'),auto;
 }
 
 
