@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- AOS ANIMATION LINK -->
     <script src="js/script.js"></script>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/LOGOICON.png">
     <title>AI ART</title>
@@ -33,7 +34,7 @@
 
 <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg " id="navbar_top">
+    <nav class="navbar navbar-expand-lg " id="navbar_top" >
         <div class="container">
             <a class="navbar-brand" href="index.html"><img src="images/LOGO.png" height="40px" alt="Ai Art Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
@@ -43,22 +44,19 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link " href="index.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ms-lg-4 ms-0 " href="discover.html">Discover</a>
+                        <a class="nav-link ms-lg-4 ms-0" href="discover.html">Discover</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ms-lg-4 ms-0 " href="marketplace.html">MarketPlace</a>
+                        <a class="nav-link ms-lg-4 ms-0" href="marketplace.html">MarketPlace</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ms-lg-4 ms-0 " href="aboutus.html">About Us</a>
+                        <a class="nav-link ms-lg-4 ms-0" href="aboutus.html">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ms-lg-4 ms-0  " href="singin.html">Sing In</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link ms-lg-4 ms-0  navact" href="singup.html">Sing Up</a>
+                        <a class="nav-link ms-lg-4 ms-0 navact" href="joinus.html">Join Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link ms-lg-4 ms-0" href="contact.html">Contact</a>
@@ -69,47 +67,79 @@
     </nav>
     <!-- NAVBAR -->
 
-    <!-- sing Up form -->
-    <div class="container mb-5">
-        <h2 class="text-center fw-bold fs-1 py-3 pt-md-5 pb-md-2">Sing Up</h2>
-        <div class="col-12 col-md-6 m-auto" data-aos="fade-up" data-aos-offset="0" data-aos-delay="50"
-            data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false">
-            <form>
-                <div class=" mb-4">
-                    <label class="form-label fw-bold fs-5" for="form2Example1">Name</label>
-                    <input type="text" placeholder="Name" class="form-control form-control-sm mb-2" />
-                </div>
-                <div class=" mb-4">
-                    <label class="form-label fw-bold fs-5" for="form2Example1">Username</label>
-                    <input type="email" placeholder="Username" class="form-control form-control-sm mb-2" />
-                </div>
-                <div class=" mb-4">
-                    <label class="form-label fw-bold fs-5" for="form2Example1">Email address</label>
-                    <input type="email" placeholder="Email@Exmple.com" class="form-control form-control-sm mb-2" />
-                </div>
-                <div class=" mb-4">
-                    <label class="form-label fw-bold fs-5" for="form2Example2">Password</label>
-                    <input type="password" placeholder="Password" class="form-control form-control-sm mb-2" />
-                </div>
-                <div class="row mb-4">
-                    <div class="col">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                            <label class="form-check-label"> Remember me </label>
-                        </div>
+    <!-- sign in form -->
+    <div class="container mb-5 col-12 col-md-6 m-auto form--unhidden" id="Login" data-aos="fade-up" data-aos-offset="0"
+    data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+    data-aos-mirror="true" data-aos-once="false">
+        <h2 class="text-center fw-bold fs-1 py-3 py-md-5">Sign In</h2>
+        <form action="loginPage" method="POST" >
+            <div class=" mb-4">
+                <label class="form-label fw-bold fs-5">Email address</label>
+                <input type="email" placeholder="Email@Exmple.com" class="form-control form-control-sm mb-2" />
+            </div>
+            <div class=" mb-4">
+                <label class="form-label fw-bold fs-5">Password</label>
+                <input type="password" placeholder="Password" class="form-control form-control-sm mb-2" />
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" checked />
+                        <label class="form-check-label"> Remember me </label>
                     </div>
                 </div>
-                <div class="d-grid gap-2 mb-3 mb-md-4">
-                    <button class="btn btn-info">Sign in</button>
-                </div>
-                <div class="text-center">
-                    <p>Already Registered. <a href="singin.html">Sing In</a></p>
-
-                </div>
-            </form>
-        </div>
+            </div>
+            <div class="d-grid gap-2 mb-3 mb-md-4">
+                <button type="button" onclick = "window.location.href='index.html';" class="btn btn-info">Sign In</button>
+            </div>
+            <div class="text-center form__text" id="ToCreateAccount">
+                <p>Not a member? <a class="form__link" href="#CreateAccount" id="linkCreateAccount">Register</a></p>
+            </div>
+        </form>
     </div>
-    <!-- sing Up form -->
+    <!-- sing in form -->
+
+    <!-- SIGN UP -->
+    <div class="container mb-5 form--hidden col-12 col-md-6 m-auto" id="CreateAccount" >
+        <h2 class="text-center fw-bold fs-1 py-3 py-md-5">Register</h2>
+
+        <form action="registerPage" method="POST">
+            <div class=" mb-4">
+                <label class="form-label fw-bold fs-5" >Name</label>
+                <input type="text" placeholder="Name" class="form-control form-control-sm mb-2" />
+            </div>
+            <div class=" mb-4">
+                <label class="form-label fw-bold fs-5">Username</label>
+                <input type="email" placeholder="Username" class="form-control form-control-sm mb-2" />
+            </div>
+            <div class=" mb-4">
+                <label class="form-label fw-bold fs-5">Email address</label>
+                <input type="email" placeholder="Email@Exmple.com" class="form-control form-control-sm mb-2" />
+            </div>
+            <div class=" mb-4">
+                <label class="form-label fw-bold fs-5">Password</label>
+                <input type="password" placeholder="Password" class="form-control form-control-sm mb-2" />
+            </div>
+            <div class="row mb-4">
+                <div class="col">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" />
+                        <label class="form-check-label"> I agree to the AiArt Terms </label>
+                    </div>
+                </div>
+            </div>
+            <div class="d-grid gap-2 mb-3 mb-md-4">
+                <button type="button" onclick = "window.location.href='index.html';" class="btn btn-info">Register</button>
+            </div>
+            <div class="text-center form__text" id="ToLogin">
+                <p>Already have an account? <a class="form__link" href="#ChangeLogin" id="linkLogin">Sing In</a></p>
+
+            </div>
+        </form>
+    </div>
+    <!-- SIGN UP -->
+    <script src="js/form.js"></script>
+
 
 
     <!-- BACK BUTTON -->
@@ -132,8 +162,7 @@
                                 class="img-fluid w-50 navbar-brand m-auto m-md-0  d-block " alt=""></a>
                         <p>Get exclusive AI Arts straight to your directory. AI Art Gallery That Give You 10x More
                             Creative and Exclusive Art.</p>
-                        <a href="singup.html"><button class="btn btn-sm btn-info ms-2">Sing Up</button></a>
-                        <a href="singin.html"><button class="btn btn-sm btn-info ms-2">Sing In</button></a>
+                            <a href="joinus.html"><button class="btn btn-sm btn-info ms-2">Join Us</button></a>
                     </div>
 
                     <div class="col-12 col-md-4 my-3 pt-3 pt-md-0 mt-md-0 d-flex justify-content-center"

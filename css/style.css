@@ -11,7 +11,9 @@ body {
     background-size: cover;
     color: white;
     font-family: 'Poppins', sans-serif;
+    cursor: url('/images/mouse.png'),auto;
 }
+
 
 /* SCROLL BAR CSS */
 
@@ -332,6 +334,14 @@ form .form-control:focus {
 
 form .form-control::placeholder {
     color: rgb(214, 214, 214);
+}
+
+.form--unhidden {
+    display: block;
+}
+
+.form--hidden {
+    display: none;
 }
 
 /* SING IN CSS */
